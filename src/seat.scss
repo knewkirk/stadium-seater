@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.seat {
+    border: {
+        width: 1px;
+        style: solid;
+        color: $lightgrey;
+        radius: $bigborderradius;
+    }
+    display: inline-block;
+    height: 20px;
+    margin: 2px;
+    transition: border-color 0.2s, background-color 0.2s;
+    width: 20px;
+
+    &.is-taken {
+        background-color: $red;
+        border-color: $darkred;
+    }
+
+    &.is-match {
+        background-color: $green;
+        border-color: $darkgreen;
+    }
+
+    &.is-highlighted {
+        background-color: $greenhighlight;
+    }
+}

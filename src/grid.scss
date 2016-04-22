@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+.grid {
+    border: {
+        radius: $bigborderradius;
+        style: solid;
+        width: 1px;
+        color: $lightgrey;
+    }
+    box-shadow: $bigoutershadow;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    white-space: nowrap;
+    width: auto;
+}

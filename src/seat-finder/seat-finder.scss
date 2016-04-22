@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../button.scss';
+@import '../input.scss';
+
+body {
+    font: {
+        family: 'Open Sans', sans-serif;
+        weight: lighter;
+    }
+    color: $darkgrey;
+    -webkit-font-smoothing: antialiased;
+}
+
+#content {
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    font: {
+        size: 34px;
+        variant: small-caps;
+        weight: normal;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    margin-top: 20px;
+}

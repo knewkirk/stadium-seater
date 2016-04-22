@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.results-pane {
+    border: {
+        color: $lightgrey;
+        radius: $bigborderradius;
+        style: solid;
+        width: 1px;
+    }
+    box-shadow: $bigoutershadow;
+    color: $midgrey;
+    cursor: default;
+    display: inline-block;
+    font: {
+        size: 14px;
+        weight: normal;
+    }
+    margin: 5px 0 0 20px;
+    max: {
+        height: 300px;
+        width: 300px;
+    }
+    overflow: {
+        x: hidden;
+        y: scroll;
+    }
+    padding: 10px 30px 10px 15px;
+    text: {
+        align: left;
+        overflow: ellipsis;
+    }
+    vertical-align: top;
+    white-space: nowrap;
+
+    &.is-error {
+        border-color: $red;
+        color: $darkred;
+    }
+
+    li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover, &.is-selected {
+            color: $darkgrey;
+            cursor: pointer;
+        }
+    }
+}

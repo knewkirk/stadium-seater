@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+button {
+    border: {
+        width: 1px;
+        style: solid;
+        color: $midgrey;
+        radius: 2px;
+    }
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: $white;
+    height: 30px;
+    margin: 10px;
+    padding: 0 10px 1px 10px;
+
+    &:active,
+    &:active:focus {
+        box-shadow: none;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $blue;
+    }
+
+    &[type="submit"] {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+
+        &:active,
+        &:active:focus {
+            box-shadow: none;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: inset 0 0 0 1px $white, 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
