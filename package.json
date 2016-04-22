@@ -2,7 +2,7 @@
   "name": "stadium-seater",
   "version": "0.0.0",
   "description": "An application for finding open seats in a stadium",
-  "main": "index.jsx",
+  "main": "src/index.jsx",
   "scripts": {
     "start": "npm run serve | npm run dev",
     "serve": "./node_modules/.bin/http-server -p 8080",
